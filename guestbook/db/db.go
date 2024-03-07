@@ -14,7 +14,7 @@ type Guest struct {
 	Date    int
 }
 
-func RunDB() {
+func RunDB() []*Guest {
 	fmt.Printf("running main function\n")
 
 	schema := &memdb.DBSchema{
@@ -93,4 +93,6 @@ func RunDB() {
 		p := obj.(*Guest)
 		fmt.Printf("  %s\n", p.Name)
 	}
+
+	return guests
 }

@@ -1,9 +1,10 @@
 package main
 
 import (
-	"guestbook/db"
+	"guestbook/rest"
 )
 
 func main() {
-	db.RunDB()
+	rest.StartServer()
+
 }
